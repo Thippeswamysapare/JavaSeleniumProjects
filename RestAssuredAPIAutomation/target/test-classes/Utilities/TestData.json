@@ -1,0 +1,9 @@
+{
+
+"AccessToken" : "4c18effdc972063bf8e7c9d92f6720e5e2285e626428fc083b6878a8af75ef08",
+"BaseURI" : "https://gorest.co.in" ,
+"Password" : "pass@123",
+"GetReqeuestResourcePath" : "/public/v2/posts"
+
+
+}

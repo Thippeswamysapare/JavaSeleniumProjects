@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\61086862\eclipse-workspace\TESTNGANNOTATIONSTEST\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>3 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">41 methods, 1 failed,  1 skipped,  39 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.DependsOnMethods" class="method navigator-link" hash-for-method="Test1">Test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.DependsOnMethods" class="method navigator-link" hash-for-method="Test3">Test3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.DataProviderTest" class="method navigator-link" hash-for-method="GetDataFromDataProvider(abc, pwddddd)">GetDataFromDataProvider(abc, pwddddd)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.DataProviderTest" class="method navigator-link" hash-for-method="GetDataFromDataProvider(Swamy, pass@123)">GetDataFromDataProvider(Swamy, pass@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.DataProviderTest" class="method navigator-link" hash-for-method="GetDataFromDataProvider(Tanmayee, Triveni)">GetDataFromDataProvider(Tanmayee, Triveni)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.InvocationCount" class="method navigator-link" hash-for-method="InvocationMethod1">InvocationMethod1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.InvocationCount" class="method navigator-link" hash-for-method="InvocationMethod2">InvocationMethod2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.InvocationCount" class="method navigator-link" hash-for-method="InvocationMethod2">InvocationMethod2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.InvocationCount" class="method navigator-link" hash-for-method="InvocationMethod2">InvocationMethod2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.InvocationCount" class="method navigator-link" hash-for-method="InvocationMethod2">InvocationMethod2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.InvocationCount" class="method navigator-link" hash-for-method="InvocationMethod2">InvocationMethod2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.GroupsTest" class="method navigator-link" hash-for-method="Test1">Test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.ParallelExecutionTest" class="method navigator-link" hash-for-method="Test1">Test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.GroupsTest" class="method navigator-link" hash-for-method="Test10">Test10</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.DependsOnMethods" class="method navigator-link" hash-for-method="Test2">Test2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.ParallelExecutionTest" class="method navigator-link" hash-for-method="Test2">Test2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.GroupsTest" class="method navigator-link" hash-for-method="Test2">Test2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.ParallelExecutionTest" class="method navigator-link" hash-for-method="Test3">Test3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.GroupsTest" class="method navigator-link" hash-for-method="Test3">Test3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.ParallelExecutionTest" class="method navigator-link" hash-for-method="Test4">Test4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.DependsOnMethods" class="method navigator-link" hash-for-method="Test4">Test4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.GroupsTest" class="method navigator-link" hash-for-method="Test4">Test4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.GroupsTest" class="method navigator-link" hash-for-method="Test5">Test5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.Priority" class="method navigator-link" hash-for-method="abc">abc</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.expectedExceptionTest" class="method navigator-link" hash-for-method="exceptionTest1">exceptionTest1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.expectedExceptionTest" class="method navigator-link" hash-for-method="exceptionTest2">exceptionTest2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.expectedExceptionTest" class="method navigator-link" hash-for-method="exceptionTest3">exceptionTest3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.DataProviderFromOtherClass" class="method navigator-link" hash-for-method="getTestDatafromDataProvider(james@yopmail.com, abe@123)">getTestDatafromDataProvider(james@yopmail.com, abe@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.DataProviderFromOtherClass" class="method navigator-link" hash-for-method="getTestDatafromDataProvider(manu@gmail.com, pass@123)">getTestDatafromDataProvider(manu@gmail.com, pass@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.Priority" class="method navigator-link" hash-for-method="ghj">ghj</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.Priority" class="method navigator-link" hash-for-method="lmn">lmn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.Priority" class="method navigator-link" hash-for-method="omn">omn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.EnableParameter" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.EnableParameter" class="method navigator-link" hash-for-method="test3">test3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.EnableParameter" class="method navigator-link" hash-for-method="test4">test4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.ParallelExecutionTest2" class="method navigator-link" hash-for-method="test5">test5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.ParallelExecutionTest2" class="method navigator-link" hash-for-method="test6">test6</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.AnnottionsInTestNG" class="method navigator-link" hash-for-method="testcase1">testcase1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.AnnottionsInTestNG" class="method navigator-link" hash-for-method="testcase2">testcase2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.AnnottionsInTestNG" class="method navigator-link" hash-for-method="testcase3">testcase3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.Priority" class="method navigator-link" hash-for-method="xyz">xyz</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestCases.DependsOnMethods</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test1">
+                  </a> <!-- Test1 -->
+                  <span class="method-name">Test1</span>
+                  <div class="stack-trace">java.lang.ArithmeticException: / by zero
+	at TestCases.DependsOnMethods.Test1(DependsOnMethods.java:11)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">TestCases.DependsOnMethods</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test3">
+                  </a> <!-- Test3 -->
+                  <span class="method-name">Test3</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TestCases.DependsOnMethods.Test3() on instance TestCases.DependsOnMethods@10683d9d depends on not successfully finished methods 
+[TestCases.DependsOnMethods.Test1() on instance TestCases.DependsOnMethods@10683d9d
+TestCases.DependsOnMethods.Test2() on instance TestCases.DependsOnMethods@10683d9d]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.EnableParameter</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test3">
+                  </a> <!-- test3 -->
+                  <span class="method-name">test3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test4">
+                  </a> <!-- test4 -->
+                  <span class="method-name">test4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.DataProviderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetDataFromDataProvider(abc, pwddddd)">
+                  </a> <!-- GetDataFromDataProvider(abc, pwddddd) -->
+                  <span class="method-name">GetDataFromDataProvider</span>
+                  <span class="parameters">(abc,pwddddd)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetDataFromDataProvider(Swamy, pass@123)">
+                  </a> <!-- GetDataFromDataProvider(Swamy, pass@123) -->
+                  <span class="method-name">GetDataFromDataProvider</span>
+                  <span class="parameters">(Swamy,pass@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetDataFromDataProvider(Tanmayee, Triveni)">
+                  </a> <!-- GetDataFromDataProvider(Tanmayee, Triveni) -->
+                  <span class="method-name">GetDataFromDataProvider</span>
+                  <span class="parameters">(Tanmayee,Triveni)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.Priority</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="abc">
+                  </a> <!-- abc -->
+                  <span class="method-name">abc</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ghj">
+                  </a> <!-- ghj -->
+                  <span class="method-name">ghj</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="lmn">
+                  </a> <!-- lmn -->
+                  <span class="method-name">lmn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="omn">
+                  </a> <!-- omn -->
+                  <span class="method-name">omn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="xyz">
+                  </a> <!-- xyz -->
+                  <span class="method-name">xyz</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.ParallelExecutionTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test1">
+                  </a> <!-- Test1 -->
+                  <span class="method-name">Test1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test2">
+                  </a> <!-- Test2 -->
+                  <span class="method-name">Test2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test3">
+                  </a> <!-- Test3 -->
+                  <span class="method-name">Test3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test4">
+                  </a> <!-- Test4 -->
+                  <span class="method-name">Test4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.DataProviderFromOtherClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTestDatafromDataProvider(james@yopmail.com, abe@123)">
+                  </a> <!-- getTestDatafromDataProvider(james@yopmail.com, abe@123) -->
+                  <span class="method-name">getTestDatafromDataProvider</span>
+                  <span class="parameters">(james@yopmail.com,abe@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTestDatafromDataProvider(manu@gmail.com, pass@123)">
+                  </a> <!-- getTestDatafromDataProvider(manu@gmail.com, pass@123) -->
+                  <span class="method-name">getTestDatafromDataProvider</span>
+                  <span class="parameters">(manu@gmail.com,pass@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.AnnottionsInTestNG</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcase1">
+                  </a> <!-- testcase1 -->
+                  <span class="method-name">testcase1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcase2">
+                  </a> <!-- testcase2 -->
+                  <span class="method-name">testcase2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcase3">
+                  </a> <!-- testcase3 -->
+                  <span class="method-name">testcase3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.DependsOnMethods</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test2">
+                  </a> <!-- Test2 -->
+                  <span class="method-name">Test2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test4">
+                  </a> <!-- Test4 -->
+                  <span class="method-name">Test4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.InvocationCount</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="InvocationMethod1">
+                  </a> <!-- InvocationMethod1 -->
+                  <span class="method-name">InvocationMethod1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="InvocationMethod2">
+                  </a> <!-- InvocationMethod2 -->
+                  <span class="method-name">InvocationMethod2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="InvocationMethod2">
+                  </a> <!-- InvocationMethod2 -->
+                  <span class="method-name">InvocationMethod2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="InvocationMethod2">
+                  </a> <!-- InvocationMethod2 -->
+                  <span class="method-name">InvocationMethod2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="InvocationMethod2">
+                  </a> <!-- InvocationMethod2 -->
+                  <span class="method-name">InvocationMethod2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="InvocationMethod2">
+                  </a> <!-- InvocationMethod2 -->
+                  <span class="method-name">InvocationMethod2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.GroupsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test1">
+                  </a> <!-- Test1 -->
+                  <span class="method-name">Test1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test10">
+                  </a> <!-- Test10 -->
+                  <span class="method-name">Test10</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test2">
+                  </a> <!-- Test2 -->
+                  <span class="method-name">Test2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test3">
+                  </a> <!-- Test3 -->
+                  <span class="method-name">Test3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test4">
+                  </a> <!-- Test4 -->
+                  <span class="method-name">Test4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test5">
+                  </a> <!-- Test5 -->
+                  <span class="method-name">Test5</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.expectedExceptionTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="exceptionTest1">
+                  </a> <!-- exceptionTest1 -->
+                  <span class="method-name">exceptionTest1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="exceptionTest2">
+                  </a> <!-- exceptionTest2 -->
+                  <span class="method-name">exceptionTest2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="exceptionTest3">
+                  </a> <!-- exceptionTest3 -->
+                  <span class="method-name">exceptionTest3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.ParallelExecutionTest2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test5">
+                  </a> <!-- test5 -->
+                  <span class="method-name">test5</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test6">
+                  </a> <!-- test6 -->
+                  <span class="method-name">test6</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\61086862\eclipse-workspace\TESTNGANNOTATIONSTEST\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TestCases.ParallelExecutionTest&quot;/&gt;
+      &lt;class name=&quot;TestCases.InvocationCount&quot;/&gt;
+      &lt;class name=&quot;TestCases.EnableParameter&quot;/&gt;
+      &lt;class name=&quot;TestCases.expectedExceptionTest&quot;/&gt;
+      &lt;class name=&quot;TestCases.DataProviderTest&quot;/&gt;
+      &lt;class name=&quot;TestCases.AnnottionsInTestNG&quot;/&gt;
+      &lt;class name=&quot;TestCases.DataProviderFromOtherClass&quot;/&gt;
+      &lt;class name=&quot;TestCases.ParallelExecutionTest2&quot;/&gt;
+      &lt;class name=&quot;TestCases.Priority&quot;/&gt;
+      &lt;class name=&quot;TestCases.GroupsTest&quot;/&gt;
+      &lt;class name=&quot;TestCases.DependsOnMethods&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (11 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">e2e</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">Test5</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">Test10</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">Test2</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">Test4</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">Test1</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">Test10</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">Test3</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(41);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'InvocationMethod2')
+data.setCell(0, 2, 'TestCases.InvocationCount')
+data.setCell(0, 3, 15);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'InvocationMethod2')
+data.setCell(1, 2, 'TestCases.InvocationCount')
+data.setCell(1, 3, 14);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'InvocationMethod2')
+data.setCell(2, 2, 'TestCases.InvocationCount')
+data.setCell(2, 3, 13);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'InvocationMethod2')
+data.setCell(3, 2, 'TestCases.InvocationCount')
+data.setCell(3, 3, 13);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'InvocationMethod2')
+data.setCell(4, 2, 'TestCases.InvocationCount')
+data.setCell(4, 3, 13);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Test1')
+data.setCell(5, 2, 'TestCases.ParallelExecutionTest')
+data.setCell(5, 3, 10);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'test1')
+data.setCell(6, 2, 'TestCases.EnableParameter')
+data.setCell(6, 3, 4);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'GetDataFromDataProvider')
+data.setCell(7, 2, 'TestCases.DataProviderTest')
+data.setCell(7, 3, 4);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'Test2')
+data.setCell(8, 2, 'TestCases.DependsOnMethods')
+data.setCell(8, 3, 4);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'ghj')
+data.setCell(9, 2, 'TestCases.Priority')
+data.setCell(9, 3, 4);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'GetDataFromDataProvider')
+data.setCell(10, 2, 'TestCases.DataProviderTest')
+data.setCell(10, 3, 4);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'InvocationMethod1')
+data.setCell(11, 2, 'TestCases.InvocationCount')
+data.setCell(11, 3, 4);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'lmn')
+data.setCell(12, 2, 'TestCases.Priority')
+data.setCell(12, 3, 3);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testcase1')
+data.setCell(13, 2, 'TestCases.AnnottionsInTestNG')
+data.setCell(13, 3, 3);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'test5')
+data.setCell(14, 2, 'TestCases.ParallelExecutionTest2')
+data.setCell(14, 3, 2);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'Test3')
+data.setCell(15, 2, 'TestCases.ParallelExecutionTest')
+data.setCell(15, 3, 2);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testcase2')
+data.setCell(16, 2, 'TestCases.AnnottionsInTestNG')
+data.setCell(16, 3, 2);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'Test1')
+data.setCell(17, 2, 'TestCases.GroupsTest')
+data.setCell(17, 3, 2);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'test6')
+data.setCell(18, 2, 'TestCases.ParallelExecutionTest2')
+data.setCell(18, 3, 2);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'Test3')
+data.setCell(19, 2, 'TestCases.GroupsTest')
+data.setCell(19, 3, 2);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'exceptionTest2')
+data.setCell(20, 2, 'TestCases.expectedExceptionTest')
+data.setCell(20, 3, 2);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'Test4')
+data.setCell(21, 2, 'TestCases.ParallelExecutionTest')
+data.setCell(21, 3, 2);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'test4')
+data.setCell(22, 2, 'TestCases.EnableParameter')
+data.setCell(22, 3, 2);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'exceptionTest3')
+data.setCell(23, 2, 'TestCases.expectedExceptionTest')
+data.setCell(23, 3, 2);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'Test4')
+data.setCell(24, 2, 'TestCases.DependsOnMethods')
+data.setCell(24, 3, 2);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'Test2')
+data.setCell(25, 2, 'TestCases.ParallelExecutionTest')
+data.setCell(25, 3, 2);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'test3')
+data.setCell(26, 2, 'TestCases.EnableParameter')
+data.setCell(26, 3, 2);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'getTestDatafromDataProvider')
+data.setCell(27, 2, 'TestCases.DataProviderFromOtherClass')
+data.setCell(27, 3, 2);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'Test5')
+data.setCell(28, 2, 'TestCases.GroupsTest')
+data.setCell(28, 3, 2);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'Test10')
+data.setCell(29, 2, 'TestCases.GroupsTest')
+data.setCell(29, 3, 2);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'Test4')
+data.setCell(30, 2, 'TestCases.GroupsTest')
+data.setCell(30, 3, 2);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'Test1')
+data.setCell(31, 2, 'TestCases.DependsOnMethods')
+data.setCell(31, 3, 2);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'abc')
+data.setCell(32, 2, 'TestCases.Priority')
+data.setCell(32, 3, 1);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'exceptionTest1')
+data.setCell(33, 2, 'TestCases.expectedExceptionTest')
+data.setCell(33, 3, 1);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'getTestDatafromDataProvider')
+data.setCell(34, 2, 'TestCases.DataProviderFromOtherClass')
+data.setCell(34, 3, 1);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'xyz')
+data.setCell(35, 2, 'TestCases.Priority')
+data.setCell(35, 3, 1);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'testcase3')
+data.setCell(36, 2, 'TestCases.AnnottionsInTestNG')
+data.setCell(36, 3, 1);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'Test2')
+data.setCell(37, 2, 'TestCases.GroupsTest')
+data.setCell(37, 3, 1);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'omn')
+data.setCell(38, 2, 'TestCases.Priority')
+data.setCell(38, 3, 1);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'GetDataFromDataProvider')
+data.setCell(39, 2, 'TestCases.DataProviderTest')
+data.setCell(39, 3, 1);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'Test3')
+data.setCell(40, 2, 'TestCases.DependsOnMethods')
+data.setCell(40, 3, 0);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 152 ms</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">GetDataFromDataProvider(abc, pwddddd)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">this is Data provider class</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">GetDataFromDataProvider(Swamy, pass@123)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">this is Data provider class</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">GetDataFromDataProvider(Tanmayee, Triveni)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">this is Data provider class</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.EnableParameter</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">test2</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.AnnottionsInTestNG</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">26 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.ParallelExecutionTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Test1</span>
+                <span class="method-start">73 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test2</span>
+                <span class="method-start">95 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test3</span>
+                <span class="method-start">100 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test4</span>
+                <span class="method-start">107 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.InvocationCount</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">InvocationMethod1</span>
+                <span class="method-start">113 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">InvocationMethod2</span>
+                <span class="method-start">146 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">InvocationMethod2</span>
+                <span class="method-start">146 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">InvocationMethod2</span>
+                <span class="method-start">146 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">InvocationMethod2</span>
+                <span class="method-start">146 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">InvocationMethod2</span>
+                <span class="method-start">148 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.EnableParameter</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test1</span>
+                <span class="method-start">172 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test3</span>
+                <span class="method-start">180 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test4</span>
+                <span class="method-start">185 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.expectedExceptionTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">exceptionTest1</span>
+                <span class="method-start">191 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">exceptionTest2</span>
+                <span class="method-start">195 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">exceptionTest3</span>
+                <span class="method-start">200 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.DataProviderTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">GetDataFromDataProvider(Swamy, pass@123)</span>
+                <span class="method-start">213 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">GetDataFromDataProvider(abc, pwddddd)</span>
+                <span class="method-start">219 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">GetDataFromDataProvider(Tanmayee, Triveni)</span>
+                <span class="method-start">225 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.AnnottionsInTestNG</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">229 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">232 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testcase1</span>
+                <span class="method-start">234 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">239 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcase2</span>
+                <span class="method-start">242 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">242 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">246 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">247 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testcase3</span>
+                <span class="method-start">248 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">252 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">275 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.DataProviderFromOtherClass</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getTestDatafromDataProvider(manu@gmail.com, pass@123)</span>
+                <span class="method-start">280 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getTestDatafromDataProvider(james@yopmail.com, abe@123)</span>
+                <span class="method-start">284 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.ParallelExecutionTest2</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test5</span>
+                <span class="method-start">290 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test6</span>
+                <span class="method-start">294 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.Priority</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">xyz</span>
+                <span class="method-start">299 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">lmn</span>
+                <span class="method-start">302 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">omn</span>
+                <span class="method-start">309 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">abc</span>
+                <span class="method-start">313 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ghj</span>
+                <span class="method-start">317 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.GroupsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Test1</span>
+                <span class="method-start">326 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test10</span>
+                <span class="method-start">344 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test2</span>
+                <span class="method-start">348 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test3</span>
+                <span class="method-start">353 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test4</span>
+                <span class="method-start">357 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test5</span>
+                <span class="method-start">362 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.DependsOnMethods</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Test1</span>
+                <span class="method-start">367 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test2</span>
+                <span class="method-start">376 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test4</span>
+                <span class="method-start">394 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.AnnottionsInTestNG</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">398 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">535 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="TestCases.ParallelExecutionTest"/>
+      <class name="TestCases.InvocationCount"/>
+      <class name="TestCases.EnableParameter"/>
+      <class name="TestCases.expectedExceptionTest"/>
+      <class name="TestCases.DataProviderTest"/>
+      <class name="TestCases.AnnottionsInTestNG"/>
+      <class name="TestCases.DataProviderFromOtherClass"/>
+      <class name="TestCases.ParallelExecutionTest2"/>
+      <class name="TestCases.Priority"/>
+      <class name="TestCases.GroupsTest"/>
+      <class name="TestCases.DependsOnMethods"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
