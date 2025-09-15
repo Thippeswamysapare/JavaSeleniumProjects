@@ -3,6 +3,7 @@ package DeserializationForResponse;
 public class GetPostResponseBookingDates {
 	private String checkin;
 	private String checkout;
+	
 	public String getCheckin() {
 		return checkin;
 	}
@@ -15,5 +16,4 @@ public class GetPostResponseBookingDates {
 	public void setCheckout(String checkout) {
 		this.checkout = checkout;
 	}
-
 }

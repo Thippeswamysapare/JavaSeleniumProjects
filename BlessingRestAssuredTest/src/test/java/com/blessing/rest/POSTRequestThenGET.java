@@ -1,11 +1,7 @@
 package com.blessing.rest;
 import static io.restassured.RestAssured.given;
- 
-
 import java.util.Map;
-
 import org.testng.annotations.Test;
-
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import junit.framework.Assert;

@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-25T15:03:21 IST" name="Default suite" finished-at="2025-08-25T15:03:27 IST" duration-ms="6111">
+  <suite started-at="2025-09-12T13:13:18 IST" name="Default suite" finished-at="2025-09-12T13:13:22 IST" duration-ms="3878">
     <groups>
     </groups>
-    <test started-at="2025-08-25T15:03:21 IST" name="Default test" finished-at="2025-08-25T15:03:27 IST" duration-ms="6111">
-      <class name="com.blessing.rest.POSTRequestTestSerialization">
-        <test-method signature="CreateBooking()[pri:0, instance:com.blessing.rest.POSTRequestTestSerialization@145f66e3]" started-at="2025-08-25T15:03:21 IST" name="CreateBooking" finished-at="2025-08-25T15:03:27 IST" duration-ms="6060" status="PASS">
+    <test started-at="2025-09-12T13:13:18 IST" name="Default test" finished-at="2025-09-12T13:13:22 IST" duration-ms="3878">
+      <class name="com.blessing.rest.POSTWithJsonObject">
+        <test-method signature="TestPost()[pri:0, instance:com.blessing.rest.POSTWithJsonObject@145f66e3]" started-at="2025-09-12T13:13:18 IST" name="TestPost" finished-at="2025-09-12T13:13:22 IST" duration-ms="3813" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CreateBooking -->
-      </class> <!-- com.blessing.rest.POSTRequestTestSerialization -->
+        </test-method> <!-- TestPost -->
+      </class> <!-- com.blessing.rest.POSTWithJsonObject -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

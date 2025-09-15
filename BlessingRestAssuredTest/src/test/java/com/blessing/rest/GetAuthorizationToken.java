@@ -7,7 +7,8 @@ public class GetAuthorizationToken {
 	public static String getAccessToken()
 	{
 		RestAssured.baseURI="https://restful-booker.herokuapp.com";
-		String response= given().header("Content-Type","application/json").
+		String response= given().
+				header("Content-Type","application/json").
 				body(PayLoads.PayLoadForGetToken()).
 				when().post("/auth").
 				then().log().all().assertThat().statusCode(200).extract().response().asString();

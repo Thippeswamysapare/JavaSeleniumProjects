@@ -9,6 +9,7 @@ public class GetPostResponsePojo {
 	private boolean depositpaid;
 	private String additionalneeds;
 	private BookingDatePOJO bookingdates;
+	
 	public String getFirstname() {
 		return firstname;
 	}

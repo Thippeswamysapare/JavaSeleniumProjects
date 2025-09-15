@@ -4,7 +4,6 @@ public class BookingDatePOJO {
 	private String checkin;
 	private String checkout;
 	
-	
 	public String getCheckin() {
 		return checkin;
 	}
@@ -17,6 +16,4 @@ public class BookingDatePOJO {
 	public void setCheckout(String checkout) {
 		this.checkout = checkout;
 	}
-	
-
 }
