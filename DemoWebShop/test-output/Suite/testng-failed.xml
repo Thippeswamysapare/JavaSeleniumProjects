@@ -4,14 +4,24 @@
   <test thread-count="5" name="Chrome Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.shop.grocery.Orderbooks">
+      <class name="com.shop.grocery.AddToCartWithoutLogin">
         <methods>
+          <include name="teardownReport"/>
           <include name="launchBrowser"/>
-          <include name="orderBooks"/>
-          <include name="tearDown"/>
+          <include name="addBookToCardWithoutLogin"/>
+          <include name="setupReport"/>
           <include name="teamDown"/>
         </methods>
-      </class> <!-- com.shop.grocery.Orderbooks -->
+      </class> <!-- com.shop.grocery.AddToCartWithoutLogin -->
+      <class name="com.shop.grocery.RegisterNewUser">
+        <methods>
+          <include name="teardownReport"/>
+          <include name="registerNewUSer"/>
+          <include name="launchBrowser"/>
+          <include name="setupReport"/>
+          <include name="teamDown"/>
+        </methods>
+      </class> <!-- com.shop.grocery.RegisterNewUser -->
     </classes>
   </test> <!-- Chrome Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

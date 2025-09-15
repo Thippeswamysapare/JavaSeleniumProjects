@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="LoginWithDataFromDataProviders">
+      <class name="com.shop.grocery.VerifyMandatoryFieldsInRegistrationPage">
         <methods>
-          <include name="loginToWebShop"/>
+          <include name="teardownReport"/>
+          <include name="launchBrowser"/>
+          <include name="verfyingMandatoryFields"/>
+          <include name="setupReport"/>
+          <include name="teamDown"/>
         </methods>
-      </class> <!-- LoginWithDataFromDataProviders -->
+      </class> <!-- com.shop.grocery.VerifyMandatoryFieldsInRegistrationPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

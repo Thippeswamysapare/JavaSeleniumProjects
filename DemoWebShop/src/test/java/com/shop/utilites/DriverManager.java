@@ -2,16 +2,13 @@ package com.shop.utilites;
 
 import org.openqa.selenium.WebDriver;
 
+import jdk.internal.org.jline.utils.Log;
+
 public class DriverManager 
 {
     public static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
     
-    public DriverManager()
-    {
-    	
-    }
-
-    public static WebDriver getDriverInstance() {
+      public static WebDriver getDriverInstance() {
     	return driver.get();
         
     }
@@ -22,7 +19,11 @@ public class DriverManager
     
    
     public static void quitDriver() {
-        driver.get().quit();
+       if(driver!=null)
+       {
+    	//Log.info("closing browser.......!");
+    	driver.get().quit();
         driver.remove();
+       }
     }
 }
