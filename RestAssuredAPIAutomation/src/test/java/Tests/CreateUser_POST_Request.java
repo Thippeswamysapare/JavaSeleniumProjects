@@ -2,6 +2,7 @@ package Tests;
 
 import static io.restassured.RestAssured.given;
 
+import java.util.Base64;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -10,20 +11,22 @@ import org.testng.annotations.Test;
 
 import com.github.javafaker.Faker;
 
+import Utilities.BaseTest;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import static org.hamcrest.Matchers.equalTo;
 
-public class CreateUser_POST_Request {
+public class CreateUser_POST_Request extends BaseTest{
 	
-	JsonPath jsonPath;
+	//JsonPath jsonPath;
 	JsonPath responseBodyjsonPath;
+	JsonPath requestBodyjsonPath;
 	@Test
 	public void createUserWithPOSTRequest() throws Exception
 	{
 		Faker faker =new Faker();
-		ReadDataFromJSONFile readDataFromJsonFile= new ReadDataFromJSONFile();
+		requestBodyjsonPath=getDataFromJsonFile();
 		String name = faker.name().firstName();
 		Map<String, Object> map= new HashMap<String, Object>();
 		map.put("name", name);
@@ -35,12 +38,12 @@ public class CreateUser_POST_Request {
 		JSONObject jsonObject = new JSONObject(map);
 		System.out.println(jsonObject);
 		// Read Data from JSON File
-		jsonPath= readDataFromJsonFile.getDataFromJsonFile();
-		RestAssured.baseURI= jsonPath.getString("BaseURI");
+		//JsonPath jsonpath= readDataFromJsonFile.getDataFromJsonFile();
+		RestAssured.baseURI= requestBodyjsonPath.getString("BaseURI");
 		
 		Response response=  
 				 given()
-				.header("Authorization" , "Bearer " + jsonPath.getString("AccessToken"))
+				.header("Authorization" , "Bearer " + requestBodyjsonPath.getString("AccessToken"))
 				.header("Content-Type" ,"application/json")
 				.body(jsonObject.toJSONString())
 				.when()
@@ -54,13 +57,9 @@ public class CreateUser_POST_Request {
 		responseBodyjsonPath= response.jsonPath();
 		System.out.println("RESPOSE   :  " + responseBodyjsonPath.toString());
 		System.out.println("public/v2/users/"+responseBodyjsonPath.getString("id"));
-	
-			
-		
 		
 		
 		//Get Request after POST to validate response
-		
 		given()
 			.get("public/v2/users/"+responseBodyjsonPath.getString("id"))
 			.then().statusCode(200)
@@ -68,7 +67,5 @@ public class CreateUser_POST_Request {
 //		
 //		String responseJson= response.toString();
 //		System.out.println("Respose is .......:  " +response.toString());
-			  
-	}
-
+}
 }
