@@ -1,6 +1,6 @@
 package TestCases;
 
-import org.slf4j.helpers.Reporter;
+ 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
